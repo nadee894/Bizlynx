@@ -1,0 +1,218 @@
+<!-- \ -->
+
+<head>
+  <link href="/src/app/css/vendor/all.css" rel="text/stylesheet">
+  <link href="/src/app/css/app/app.css" rel="text/stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Wrapper required for sidebar transitions -->
+  <div class="st-container"> 
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#sidebar-menu" data-effect="st-effect-1" data-toggle="sidebar-menu"
+            class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#sidebar-chat" data-toggle="sidebar-menu" data-effect="st-effect-1"
+            class="toggle pull-right visible-xs "><i class="fa fa-comments"></i></a>
+          <a class="navbar-brand navbar-brand-primary hidden-xs" href="index.html">ThemeKit</a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="nav navbar-nav hidden-xs">
+            <!-- messages -->
+            <li class="dropdown notifications hidden-xs hidden-sm">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-envelope-o"></i>
+
+              </a>
+              <ul class="dropdown-menu">
+                <li class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object thumb" src="../../assets/images/common/people/50/guy-2.jpg" alt="people">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <div class="pull-right">
+                      <span class="label label-default">5 min</span>
+                    </div>
+                    <h5 class="media-heading">Adrian D.</h5>
+
+                    <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object thumb" src="../../assets/images/common/people/50/woman-7.jpg"
+                        alt="people">
+                    </a>
+                  </div>
+
+                  <div class="media-body">
+                    <div class="pull-right">
+                      <span class="label label-default">2 days</span>
+                    </div>
+                    <h5 class="media-heading">Jane B.</h5>
+                    <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object thumb" src="../../assets/images/common/people/50/guy-8.jpg" alt="people">
+                    </a>
+                  </div>
+
+                  <div class="media-body">
+                    <div class="pull-right">
+                      <span class="label label-default">3 days</span>
+                    </div>
+                    <h5 class="media-heading">Andrew M.</h5>
+                    <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- // END messages -->
+          </ul>
+
+          <ul class="nav navbar-nav navbar-user">
+            <!-- User -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="../../assets/images/common/people/50/guy-5.jpg" width="35" alt="Bill" class="img-circle" />
+                Bill
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="login.html">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="navbar-form margin-none navbar-left hidden-xs ">
+            <!-- Search -->
+            <div class="search-1">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="icon-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search a friend">
+              </div>
+            </div>
+            <div class="pull-left visible-md visible-lg" data-toggle="tooltip" data-placement="bottom"
+              title="A few Color Examples. Download includes CSS Files for all color examples & the tools to Generate any Color combination. This Color-Switcher is for previewing purposes only.">
+              <ul class="skins">
+
+                <li><span data-file="app/app" data-skin="default" style="background: #16ae9f "></span></li>
+
+                <li><span data-file="skin-orange" data-skin="orange" style="background: #e74c3c "></span></li>
+
+                <li><span data-file="skin-blue" data-skin="blue" style="background: #4687ce "></span></li>
+
+                <li><span data-file="skin-purple" data-skin="purple" style="background: #af86b9 "></span></li>
+
+                <li><span data-file="skin-brown" data-skin="brown" style="background: #c3a961 "></span></li>
+
+              </ul>
+            </div>
+          </form>
+
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li class="pull-right">
+              <a href="#sidebar-chat" data-effect="st-effect-1" data-toggle="sidebar-menu">
+                <i class="fa fa-comments"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-visible-desktop sidebar-visible-mobile sidebar-skin-dark " id="sidebar-menu">
+      <div data-scrollable>
+        <div>
+          <ul class="sidebar-menu">
+            <ul class="sidebar-menu">
+              <li><a href="../../../index.html"><i class="icon-paint-brush"></i> <span>Themes</span></a></li>
+              <li class="category">Navigation</li>
+              <li class=" active "><a href="profile.html"><i class="icon-user-1"></i> <span>Profile</span></a></li>
+              <li class=""><a href="users.html"><i class="fa fa-group"></i> <span>Users</span></a></li>
+              <li class=""><a href="messages.html"><i class="icon-comment-fill-1"></i> <span>Messages</span></a></li>
+              <li><a href="login.html"><i class="icon-lock-fill"></i> <span>Login</span></a></li>
+
+            </ul>
+          </ul>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <strong>ThemeKit</strong> v4.0.0 &copy; Copyright 2015
+    </footer>
+    <!-- // Footer -->
+
+  </div>
+  <!-- /st-container -->
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+
+  <!-- Inline Script for colors and config objects; used by various external scripts; -->
+  <script>
+    var colors = {
+      "danger-color": "#e74c3c",
+      "success-color": "#81b53e",
+      "warning-color": "#f0ad4e",
+      "inverse-color": "#2c3e50",
+      "info-color": "#2d7cb5",
+      "default-color": "#6e7882",
+      "default-light-color": "#cfd9db",
+      "purple-color": "#9D8AC7",
+      "mustard-color": "#d4d171",
+      "lightred-color": "#e15258",
+      "body-bg": "#f6f6f6"
+    };
+    var config = {
+      theme: "social-1",
+      skins: {
+        "default": {
+          "primary-color": "#16ae9f"
+        },
+        "orange": {
+          "primary-color": "#e74c3c"
+        },
+        "blue": {
+          "primary-color": "#4687ce"
+        },
+        "purple": {
+          "primary-color": "#af86b9"
+        },
+        "brown": {
+          "primary-color": "#c3a961"
+        }
+      }
+    };
+  </script>
+
+<script src="js/vendor/all.js"></script>
+<script src="js/app/app.js"></script>
+</body>
