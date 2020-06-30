@@ -3,19 +3,27 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { TimelineComponent } from './timeline/timeline.component';
-import {BusinessprofileComponent} from './businessprofile/businessprofile.component'
+import {BusinessprofileComponent} from './businessprofile/businessprofile.component';
+import {SidebarComponent} from './sidebar/sidebar.component'
 
 const routes: Routes = [
   {
-    path: '',
-    component: LoginComponent,
-    pathMatch: 'full'
+     path: '',
+     component: SidebarComponent,
+     //pathMatch: 'full',
+     outlet: "sidebar"
     
-  },
+   },
+  // {
+  //   path: '',
+  //   component: LoginComponent,
+  //   pathMatch: 'full'
+    
+  // },
   {
-    path:'userprofile',
+    path:'',
     component:UserprofileComponent,
-   //pathMatch: 'full'
+    pathMatch: 'full'
  },
  {
   path:'timeline',

@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { BusinessprofileComponent } from './businessprofile/businessprofile.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BusinessprofileComponent } from './businessprofile/businessprofile.comp
     LoginComponent,
     UserprofileComponent,
     TimelineComponent,
-    BusinessprofileComponent
+    BusinessprofileComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
