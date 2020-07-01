@@ -4,7 +4,8 @@ import {LoginComponent} from './login/login.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import {BusinessprofileComponent} from './businessprofile/businessprofile.component';
-import {SidebarComponent} from './sidebar/sidebar.component'
+import {SidebarComponent} from './sidebar/sidebar.component';
+import {TopbarnavComponent} from './topbarnav/topbarnav.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,13 @@ const routes: Routes = [
      outlet: "sidebar"
     
    },
+   {
+    path: '',
+    component: TopbarnavComponent,
+    //pathMatch: 'full',
+    outlet: "topbar"
+   
+  },
   // {
   //   path: '',
   //   component: LoginComponent,
