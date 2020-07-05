@@ -12,4 +12,12 @@ export class TopbarnavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  open: boolean = false;
+
+  openNotifications(event) {
+    event.srcElement.classList.add("open");
+    //this.open = !this.open;
+  }
+
+
 }

@@ -9,6 +9,8 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { BusinessprofileComponent } from './businessprofile/businessprofile.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarnavComponent } from './topbarnav/topbarnav.component';
+import { UsersComponent } from './users/users.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TopbarnavComponent } from './topbarnav/topbarnav.component';
     TimelineComponent,
     BusinessprofileComponent,
     SidebarComponent,
-    TopbarnavComponent
+    TopbarnavComponent,
+    UsersComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
