@@ -18,7 +18,7 @@
                 <li><a routerLink="businessprofile"><i class="icon-user-1"></i> <span>My Business</span></a></li>
                 <li class=""><a routerLink="users"><i class="fa fa-group"></i> <span>Users</span></a></li>
                 <li class=""><a href="messages.html"><i class="icon-comment-fill-1"></i> <span>Messages</span></a></li>
-                <li><a href="login.html"><i class="icon-lock-fill"></i> <span>Login</span></a></li>
+                <li><a routerLink="login"><i class="icon-lock-fill"></i> <span>Login</span></a></li>
                 <!-- <li class="hasSubmenu">
                     <a href="#components"><i class="icon-paint-brushes"></i> <span>UI Components</span></a>
                     <ul id="components">
@@ -47,6 +47,12 @@
                     </ul>
                 </li> -->
             </ul>
+            <div class="sidebar-block equal-padding">
+                <ul class="list-group list-group-menu">
+                  <li class="list-group-item"><a href="login.html"><i class="fa fa-fw fa-lock"></i> <span>Login</span></a></li>
+                  <li class="list-group-item"><a routerLink="signup"><i class="fa fa-fw fa-pencil"></i> <span>Sign Up</span></a></li>
+                </ul>
+              </div>
             <h4 class="category border top">News Feeds</h4>
             <div class="sidebar-block">
                 <ul class="sidebar-feed">
@@ -115,6 +121,7 @@
                     </li>
                 </ul>
             </div>
+
             <!-- <h4 class="category">Filter</h4>
             <div class="sidebar-block">
                 <ul>

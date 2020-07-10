@@ -6,7 +6,9 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { BusinessprofileComponent } from './businessprofile/businessprofile.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarnavComponent } from './topbarnav/topbarnav.component';
-import {UsersComponent} from './users/users.component'
+import { UsersComponent } from './users/users.component';
+import { HomeComponent } from './home/home.component';
+import { SignupComponent } from './signup/signup.component'
 
 const routes: Routes = [
   {
@@ -21,12 +23,23 @@ const routes: Routes = [
     outlet: "topbar"
 
   },
-   {
-     path: '',
-     component: LoginComponent,
-     pathMatch: 'full'
+  {
+    path: '',
+    component: HomeComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    //pathMatch: 'full'
 
-   },
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
+    //pathMatch: 'full'
+
+  },
   {
     path: 'userprofile',
     component: UserprofileComponent
@@ -34,7 +47,6 @@ const routes: Routes = [
   {
     path: 'timeline',
     component: TimelineComponent,
-    //pathMatch: 'full'
   },
   {
     path: 'timeline',
@@ -42,11 +54,11 @@ const routes: Routes = [
   },
   {
     path: 'businessprofile',
-    component: BusinessprofileComponent    
+    component: BusinessprofileComponent
   },
   {
     path: 'users',
-    component: UsersComponent 
+    component: UsersComponent
   }
 
 

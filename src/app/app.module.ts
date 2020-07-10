@@ -11,6 +11,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarnavComponent } from './topbarnav/topbarnav.component';
 import { UsersComponent } from './users/users.component';
 import { MessagesComponent } from './messages/messages.component';
+import { HomeComponent } from './home/home.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MessagesComponent } from './messages/messages.component';
     SidebarComponent,
     TopbarnavComponent,
     UsersComponent,
-    MessagesComponent
+    MessagesComponent,
+    HomeComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
